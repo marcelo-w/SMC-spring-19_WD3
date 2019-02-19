@@ -1,3 +1,16 @@
 body {
     background-color: gray;
 }
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 48pt;
+    text-align: center;
+    transition: transform 3s;
+}
+
+h1:hover {
+    transform: scale(0.3);
+    color: black;
+}
