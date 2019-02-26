@@ -1,15 +1,19 @@
 .container {
-    background-color: dodgerblue;
+    background-color: rgb(153, 153, 102);
 }
 
-.row {
+.row :disabled {
     background-color: cornsilk;
 }
 
-[class^="col-"]:first-child {
+[class^="col-"]:first-child :disabled {
     background-color: aquamarine;
 }
 
-[class^="col-"]:last-child {
+[class^="col-"]:nth-child(2) :disabled {
+    background-color: rgb(253, 255, 127);
+}
+
+[class^="col-"]:last-child :disabled {
     background-color: salmon;
 }
