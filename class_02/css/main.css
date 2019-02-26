@@ -1,4 +1,11 @@
-.container {
+.bg-dark    {
+    background-color: rgb(153, 153, 102) !important;
+}
+.jumbotron {
+    background-color:transparent !important;
+}
+
+.container-fluid {
     background-color: rgb(153, 153, 102);
 }
 
@@ -17,3 +24,22 @@
 [class^="col-"]:last-child :disabled {
     background-color: salmon;
 }
+
+h1 {
+	font-family: "Impact";
+    color: rgb(153, 153, 102);
+}
+
+h2 {
+	font-family: "Impact", serif;
+    color: whitesmoke;
+}
+
+p, ul   {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lead   {
+    color: rgb(153, 153, 102);
+}
+
