@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+
+<h1>Lorem Ipsum</h1>
+
+<body>
+
+    <div>
+        <p id="text1">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+        from 45 BC, making it over 2000 years old. Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+        from 45 BC, making it over 2000 years old.</p>
+        <button id="button1_1" class"color-button">Color Me!</button>
+        <button id="button1_2" class"hide-button" >Hide Me!</button>
+    </div>
+
+    <div>
+        <p id="text2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+        by injected humour, or randomised words which don't look even slightly believable.</p>
+        <button id="button2_1" class"color-button">Color Me!</button>
+        <button id="button2_2" class"hide-button">Hide Me!</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".color-button").click(function(){
+            console.log(this);
+            var redVal = Math.random() * 255;
+            var greenVal = Math.random() * 255;
+            var blueVal = Math.random() * 255;
+                $(this).siblings("p").css("background-color", "rgb(" + redVal + " , " + greenVal + ", " + blueVal + ")");
+            });
+
+            $(".hide-button").click(function(){
+                if($(this).siblings("p").css("display") === "none" ){
+                    $(this).text("Hide Me!");
+                }
+                else{
+                    $(this).text("Show Me!");
+                }
+                $(this).siblings("p").toggle();
+            });
+        });
+    </script>
+
+    <script>
+
+        // var colorButton1 = document.getElementById("button1_1");
+        // var colorButton2 = document.getElementById("button1_2");
+
+        // var colorButton1 = document.getElementById("button2_1");
+        // var colorButton2 = document.getElementById("button2_2");
+
+        // var text1 = document.getElementById("text1");
+        // var text2 = document.getElementById("text2");
+
+
+        // var changeColor = (textElement){
+        //     var redVal = Math.random() * 255;
+        //     var greenVal = Math.random() * 255;
+        //     var blueVal = Math.random() * 255;
+
+        //     console.log(greenVal);
+
+        //     text.style.backgroundColor = "rgb(" + redVal + " , " + greenVal + ", " + blueVal + ")";
+        // }
+
+        // function hideText(textElement){
+        //     textElement.style.display = "none";
+        // }
+
+        // colorButton1.addEventListener("click", changeColor(text1));
+        // colorButton2.addEventListener("click", changeColor(text2));
+
+        // displayButton1.addEventListener("click", hideText(text1));
+        // displayButton2.addEventListener("click", hideText(text1));
+
+    </script>
+</body>
+
+</html>
