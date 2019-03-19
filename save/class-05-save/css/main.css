@@ -9,19 +9,17 @@ h1 {
 }
 
 p, h2, h3, h4  {
-    color: #204060;
     font-family: 'Montserrat', sans-serif;
 }
 
 button {
-    color: #204060;
     font-family: 'Montserrat', sans-serif;
     background-color: #d999ff;
     border: none;
-    padding: 8px 14px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     margin: 4px 2px;
 }
 
@@ -48,14 +46,14 @@ form {
   color: #6699ff;
   font-weight: bold;
   float: right;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .closebtn:hover {
-  color: #204060;
+  color: black;
 }
 
 .title-alt {
