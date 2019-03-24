@@ -2,6 +2,15 @@
     background-image: linear-gradient(15deg, #0066ff 0%, #00bfff 100%);
 }
 
+main {
+    background-color: #e6f9ff;
+}
+
+.jumbotron {
+    background-color:transparent !important;
+
+}
+
 .container {
     background-color: #e6f9ff;
 }
@@ -16,4 +25,8 @@
 
 [class^="col-"]:last-child {
     background-color: salmon;
+}
+
+#three-columns {
+    text-align: center;
 }
