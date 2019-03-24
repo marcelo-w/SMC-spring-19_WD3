@@ -1,0 +1,19 @@
+.bg-custom {
+    background-image: linear-gradient(15deg, #0066ff 0%, #00bfff 100%);
+}
+
+.container {
+    background-color: #e6f9ff;
+}
+
+.row {
+    background-color: cornsilk;
+}
+
+[class^="col-"]:first-child {
+    background-color: aquamarine;
+}
+
+[class^="col-"]:last-child {
+    background-color: salmon;
+}
