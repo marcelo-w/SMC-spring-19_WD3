@@ -8,23 +8,14 @@ main {
 
 .jumbotron {
     background-color:transparent !important;
+}
 
+.album {
+    background-color:transparent !important;
 }
 
 .container {
     background-color: #e6f9ff;
-}
-
-.row {
-    background-color: cornsilk;
-}
-
-[class^="col-"]:first-child {
-    background-color: aquamarine;
-}
-
-[class^="col-"]:last-child {
-    background-color: salmon;
 }
 
 #three-columns {
