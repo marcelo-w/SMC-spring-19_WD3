@@ -1,0 +1,33 @@
+body {
+    background-color: #e6f9ff;
+}
+
+.bg-custom {
+    background-image: linear-gradient(15deg, #0066ff 0%, #00bfff 100%);
+}
+
+.newsletter-button {
+    background-color: #9951E0;
+}
+
+.jumbotron{
+    background-image: url("../images/bkgd-jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .carousel img {
+    max-height: 500px;
+} */
+
+.album {
+    background-color:transparent !important;
+}
+
+.container {
+    background-color: #e6f9ff;
+}
+
+#three-columns {
+    text-align: center;
+}
