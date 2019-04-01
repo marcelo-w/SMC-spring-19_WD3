@@ -1,6 +1,9 @@
 body {
     background-color: whitesmoke;
+    color: #484848;
 }
+
+/* Nav Bar */
 
 .navbar-dark .navbar-brand {
     color: whitesmoke;
@@ -20,54 +23,66 @@ body {
     border: 0px;
 }
 
+/* Jumbotron Low Poly Background */
+
 .jumbotron{
     background-image: url("../images/bkgd-jumbo.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/* Font Styles */
+
+h1, h2 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+h3, h4 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+
+h5, p {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h4,td {
+    color: #484848;
+}
+
+/* Media Rule Breakpoints */
+
+/* Extra small devices */
+
+@media (max-width: 575.98px) {
+
+    .display-4 { 
+        font-size: 2rem;
+    }
+
+    .lead { 
+        display: none;
+    }
+
+    .lead-xs-small {
+        display: inline;
+        font-weight: 500;
+    }
+
+}
+
+/* Small devices and up */
+
+@media (min-width: 576px) {
+
+    .lead-xs-small {
+        display: none;
+    }
+
+}
+
+
+
 /* .carousel img {
     max-height: 500px;
 } */
-
-/* .container {
-    background-color: #e6f9ff;
-} */
-
-
-
-h1 {
-    font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    color: whitesmoke;
-}
-
-h2 {
-    font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    color: whitesmoke;
-}
-
-h3 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-}
-
-h4 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-}
-
-h5 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-}
-
-p {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif; 
-}
-
-table {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-}
-
-/* css color classes */
-
-.whitesmoke {
-    color: whitesmoke;
-}
