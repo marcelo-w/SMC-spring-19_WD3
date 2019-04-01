@@ -1,5 +1,13 @@
 body {
-    background-color: #e6f9ff;
+    background-color: whitesmoke;
+}
+
+.navbar-dark .navbar-brand {
+    color: whitesmoke;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: whitesmoke;
 }
 
 .bg-custom {
@@ -7,7 +15,9 @@ body {
 }
 
 .newsletter-button {
+    color: whitesmoke;
     background-color: #9951E0;
+    border: 0px;
 }
 
 .jumbotron{
@@ -20,14 +30,44 @@ body {
     max-height: 500px;
 } */
 
-.album {
-    background-color:transparent !important;
-}
-
-.container {
+/* .container {
     background-color: #e6f9ff;
+} */
+
+
+
+h1 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
 }
 
-#three-columns {
-    text-align: center;
+h2 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+h3 {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h5 {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif; 
+}
+
+table {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+/* css color classes */
+
+.whitesmoke {
+    color: whitesmoke;
 }
