@@ -42,7 +42,7 @@
 
 /* Jumbotron Low Poly Background */
 
-    .jumbotron{
+    .jumbotron {
         background-image: url("../images/bkgd-jumbo.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -86,20 +86,31 @@
         font-weight: 500;
     }
 
+    .carousel-item h1 {
+        font-size: 2rem;
+    }
 }
 
 /* Small devices and up */
 
 @media (min-width: 576px) {
-
     .lead-xs-small {
         display: none;
     }
-
 }
 
+/* Medium devices and up */
 
+@media (min-width: 768px) {
+    .carousel-item h1 {
+        font-size: 3rem;
+    }
+}
 
-/* .carousel img {
-    max-height: 500px;
-} */
+/* Large devices and up */
+
+@media (min-width: 992px) {
+     .carousel-item h1 {
+        margin-bottom: 2.5rem;
+    }   
+}
