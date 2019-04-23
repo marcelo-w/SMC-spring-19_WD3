@@ -51,8 +51,6 @@
                             </select>
                         </div>
 
-                        <button id="button-1" type="button" class="btn btn-primary">Submit</button>
-
                         <div class="mt-3 alert alert-primary alert-dismissible fade show" style="display: none" role="alert">
                             Good choice!
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -119,14 +117,15 @@
                     default:
                         break;
                 }//end of switch
+
                 console.log(innerContent);
                 $('#filmName').html(innerContent);
 
-                $("button#button-1").click(function () {
+                $("#filmName").change(function () {
                     $("div").show();
-                });
+                }); // end filmName alert
 
-            }); // end of filmMaker change event
+            }); // end of filmMaker change
 
         });// end of document ready
     </script>

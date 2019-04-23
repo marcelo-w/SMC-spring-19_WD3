@@ -25,10 +25,6 @@ p {font-family: 'Roboto', sans-serif;}
   min-width: 220px;
 }
 
-button#button-1 {
-    background-color: #8B5C97;
-}
-
 /* Media Rule Breakpoints */
 
 @media (max-width: 425px) {
