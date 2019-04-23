@@ -1,0 +1,41 @@
+html {
+  font-size: 18px;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #484848;
+}
+
+h1 {font-family: 'Rubik', sans-serif;
+    color: #8B5C97;
+}
+
+p {font-family: 'Roboto', sans-serif;}
+
+.card-deck {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+button#button-1 {
+    background-color: #8B5C97;
+}
+
+/* Media Rule Breakpoints */
+
+@media (max-width: 425px) {
+    h1.display-4 {
+        font-size: 40px;
+    }
+    html {
+        font-size: 14px;
+    }
+}
