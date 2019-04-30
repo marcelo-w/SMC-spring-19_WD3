@@ -36,7 +36,7 @@ a:hover {
     animation-timing-function: ease;
 }
 
-.title {
+.title-1 {
     display:inline-block;
     letter-spacing: 5px;
 }
@@ -46,7 +46,7 @@ a:hover {
     letter-spacing: 2px;
 }
 
-.thing-title-1, .thing-title-2, .thing-title-3, .thing-title-4 {
+.thing-title-1, .thing-title-2 {
     position: absolute;
     margin-left: 20px;
     animation-name: motion-title-delay;
@@ -113,7 +113,6 @@ a:hover {
 .second-thing-shape-all {
     width: 100px;
     height: 100px;
-    /* background:#f14336; */
     border-radius: 50%;
     position: absolute;
     animation-duration: 4s;
@@ -191,11 +190,17 @@ a:hover {
     0% {
         top: 30px;
         left: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 30px;
         left: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -203,11 +208,17 @@ a:hover {
     0% {
         top: 30px;
         right: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 30px;
         right: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -215,11 +226,17 @@ a:hover {
     0% {
         top: 160px;
         left: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 160px;
         left: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -227,11 +244,17 @@ a:hover {
     0% {
         top: 160px;
         right: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 160px;
         right: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -239,11 +262,17 @@ a:hover {
     0% {
         top: 290px;
         left: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 290px;
         left: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -251,11 +280,17 @@ a:hover {
     0% {
         top: 290px;
         right: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 290px;
         right: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -263,11 +298,17 @@ a:hover {
     0% {
         top: 420px;
         left: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 420px;
         left: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -275,11 +316,17 @@ a:hover {
     0% {
         top: 420px;
         right: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 420px;
         right: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -287,11 +334,17 @@ a:hover {
     0% {
         top: 550px;
         left: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 550px;
         left: 25px;
+        transform:scale(.5)
     }
 }
 
@@ -299,11 +352,17 @@ a:hover {
     0% {
         top: 550px;
         right: -100px;
+        transform: none;
+    }
+
+    70% {
+        transform: none;
     }
 
     100% {
         top: 550px;
         right: 25px;
+        transform:scale(.5)
     }
 }
 
