@@ -13,15 +13,7 @@ a, p, h2, h3, h4  {
     font-family: 'Roboto', sans-serif;
 }
 
-a:hover { 
-  background-color: yellow;
-}
-
-#first-things {
-    min-height: 750px;
-}
-
-#second-things {
+#first-things, #second-things {
     min-height: 750px;
 }
 
@@ -34,6 +26,10 @@ a:hover {
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-timing-function: ease;
+}
+
+.arrow-up {
+    transform: rotate(180deg); 
 }
 
 .title-1 {
@@ -137,6 +133,21 @@ a:hover {
 
 .thing-shape-2-4 {
     animation-name: motion-shape-2-4;
+}
+
+.thing-shape-2-5 {
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #f14336;
+    position: absolute;
+    animation-name: motion-shape-2-5;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes motion-title-delay {
@@ -522,13 +533,34 @@ a:hover {
     }
 }
 
+@keyframes motion-shape-2-5 {
+    0% {
+        top: 40%;
+        left: 40%;
+        transform: (0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(10);
+        opacity: 0.5;
+    }
+
+    100% {
+        top: 40%;
+        left: 40%;
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
 /* Media Rule Breakpoints */
 
 /* Extra small devices */
 
 @media (max-width: 575.98px) {
 
-    .thing-shape-2-1, .thing-shape-2-2 { 
+    .thing-shape-2-1, .thing-shape-2-2, .thing-shape-2-5 { 
         display: none;
     }
 
