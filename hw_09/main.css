@@ -13,6 +13,39 @@ a, p, h2, h3, h4  {
     font-family: 'Roboto', sans-serif;
 }
 
+.border-bottom-gradient {
+    border-image-source: linear-gradient(90deg, #f14336, white, #f14336);
+    border-image-slice: 1;
+    /* animation-name: bottom-border-motion;
+    animation-duration: 4s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out; */
+}
+
+/* @keyframes bottom-border-motion {
+    0% {
+        border-image-source: linear-gradient(90deg, #f14336, white, #f14336);   
+    }
+
+    25% {
+        border-image-source: none;
+    }
+
+    50% {
+        border-image-source: linear-gradient(90deg, #f14336, white, #f14336);
+    }
+
+    75% {
+        border-image-source: none;
+    }
+
+    100% {
+        border-image-source: linear-gradient(90deg, #f14336, white, #f14336);
+    }
+} */
+
 #first-things, #second-things {
     min-height: 750px;
 }
