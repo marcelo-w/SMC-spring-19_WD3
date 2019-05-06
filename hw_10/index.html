@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas 1</title>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            margin: 0px;
+        }
+
+        #myCanvas {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="myCanvas">
+        This is supposed to be an interactive Canvas. Please use a newer browser!
+    </canvas>
+
+    <script>
+
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.fillStyle = "#FFFFFF";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+// gradient
+
+        var gradient = context.createLinearGradient(0, 0, 0, 170);
+        gradient.addColorStop(0, "#d16ba5");
+        gradient.addColorStop(.3, "#8aa7ec");
+        gradient.addColorStop(1, "#5ffbf1");
+        context.fillStyle = gradient;
+        context.fillRect(10, 5, 280, 60);
+
+// text
+        context.fillStyle = "#FFFFFF";
+        context.font = "16px Helvetica";
+        context.textAlign = "center";
+        context.fillText("NOTHING BURGER", canvas.width / 2, canvas.height / 5.5);
+
+// image
+
+        var img = new Image();
+        img.addEventListener('load', function () {
+            context.drawImage(img, 280, 120);
+        }, false);
+        img.src = 'chimp.jpg';
+        context.scale(.4, .3);
+
+// triangle left
+
+        context.beginPath();
+        context.moveTo(100, 90);
+        context.lineTo(175, 90);
+        context.lineTo(175, 50);
+        context.alpha = 0.2;
+        context.fill();
+        
+
+// triangle right
+
+        context.beginPath();
+        context.moveTo(650, 90);
+        context.lineTo(575, 90);
+        context.lineTo(575, 50);
+        context.fill();
+
+//  arc  
+
+        context.strokeStyle = "#8aa7ec";
+        context.beginPath();
+        context.arc(380, 290, 100, 0, Math.PI, false);
+        context.fill();
+
+// zig zag
+
+        context.fillStyle = "#8aa7ec";
+        var lineJoin = ['miter'];
+        context.lineWidth = 10;
+        for (var i = 0; i < lineJoin.length; i++) {
+        context.lineJoin = lineJoin[i];
+        context.beginPath(); 
+        context.lineTo(55, 415 + i * 40);
+        context.lineTo(95, 445 + i * 40);
+        context.lineTo(135, 415 + i * 40);
+        context.lineTo(175, 445 + i * 40);
+        context.lineTo(215, 415 + i * 40);
+        context.lineTo(255, 445 + i * 40);
+        context.lineTo(295, 415 + i * 40);
+        context.lineTo(335, 445 + i * 40);
+        context.lineTo(375, 415 + i * 40);
+        context.lineTo(415, 445 + i * 40);
+        context.lineTo(455, 415 + i * 40);
+        context.lineTo(495, 445 + i * 40);
+        context.lineTo(535, 415 + i * 40);
+        context.lineTo(575, 445 + i * 40);
+        context.lineTo(615, 415 + i * 40);
+        context.lineTo(655, 445 + i * 40);
+        context.lineTo(695, 415 + i * 40);
+        context.stroke();
+        }
+
+    </script>
+</body>
+
+</html>
