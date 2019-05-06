@@ -28,19 +28,21 @@
 
     <script>
 
+// canvas
+
         var canvas = document.getElementById("myCanvas");
         var context = canvas.getContext("2d");
         context.fillStyle = "#FFFFFF";
         context.fillRect(0, 0, canvas.width, canvas.height);
 
-// gradient
+// gradient rectangle
 
         var gradient = context.createLinearGradient(0, 0, 0, 170);
         gradient.addColorStop(0, "#d16ba5");
         gradient.addColorStop(.3, "#8aa7ec");
         gradient.addColorStop(1, "#5ffbf1");
         context.fillStyle = gradient;
-        context.fillRect(10, 5, 280, 60);
+        context.fillRect(10, 5, 280, 70);
 
 // text
         context.fillStyle = "#FFFFFF";
@@ -52,10 +54,10 @@
 
         var img = new Image();
         img.addEventListener('load', function () {
-            context.drawImage(img, 280, 120);
+            context.drawImage(img, 280, 150);
         }, false);
         img.src = 'chimp.jpg';
-        context.scale(.4, .3);
+        context.scale(.4, .3); // removing scale breaks everything that follows (needed individual/non-global property)
 
 // triangle left
 
@@ -109,6 +111,27 @@
         context.lineTo(695, 415 + i * 40);
         context.stroke();
         }
+
+// transparent color circles
+
+        context.fillStyle = 'rgba(209, 107, 165, 0.4)';
+        context.beginPath();
+        context.arc(95, 375, 30, 0, Math.PI * 2, true);
+        context.arc(175, 375, 30, 0, Math.PI * 2, true);
+        context.arc(255, 375, 30, 0, Math.PI * 2, true);
+        context.arc(335, 375, 30, 0, Math.PI * 2, true);
+        context.arc(415, 375, 30, 0, Math.PI * 2, true);
+        context.arc(495, 375, 30, 0, Math.PI * 2, true);
+        context.arc(575, 375, 30, 0, Math.PI * 2, true);
+        context.arc(655, 375, 30, 0, Math.PI * 2, true);
+        context.fill();
+
+// transparent color rectangles
+
+        context.fillStyle = 'rgba(95, 251, 241, 0.5)';
+        context.fillRect(25, 270, 700, 20);
+        context.fillRect(25, 365, 700, 20);
+        context.fillRect(25, 460, 700, 20);
 
     </script>
 </body>
