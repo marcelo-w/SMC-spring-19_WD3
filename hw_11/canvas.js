@@ -5,12 +5,18 @@ var ballX = canvas.width / 2;
 var ballY = canvas.height / 2;
 var ballColor = 'rgb(220, 53, 69)';
 
-var ballRadius = 50;
+var ballRadius = 120;
 
-var speedX = 5;
-var speedY = 3;
+var speedX = 4;
+var speedY = 2;
 var moveRight = true;
 var moveDown = true;
+
+var redValue = Math.random() * 255;
+var greenValue = Math.random() * 255;
+var blueValue = Math.random() * 255;
+
+var clickCounter = 0;
 
 function animate() {
     context.fillStyle = 'rgba(203, 189, 226, 0.6)';
@@ -44,21 +50,47 @@ function animate() {
         ballY = ballY - speedY;
     }
 
+    context.font = "30px Helvetica";
+    context.textAlign = "center";
+    context.fillStyle = "#333333";
+    context.fillText("Score: " + clickCounter, canvas.width / 2, 40);
+
     window.requestAnimationFrame(animate);
 }
 
 animate();
 
+// button functions
+
+function changeSmall() {
+    --ballRadius;
+}
+
+function changeColor() {
+    ballColor = "rgb(" + redValue + ", " + greenValue + ", " + blueValue + ")";
+    // console.log(ballColor);
+}
+
+function changeBig() {
+    ++ballRadius;
+}
+
+// ball mouse click event
+
 canvas.addEventListener('click', function (event) {
     // find absolute value of click distance from ball
 
     var distX = Math.abs(ballX - event.clientX);
-    var distY = Math.abs(ballY - event.clientY)
+    var distY = Math.abs(ballY - event.clientY);
+    
 
     if (distX < ballRadius && distY < ballRadius) {
-        console.log('CLICK!!!!!');
+        console.log('Score!');
         ballColor = 'orange';
-        ballRadius = 1200;
+        ++clickCounter;
+        ++speedX;
+        ++speedY;
+        console.log(clickCounter);
     }
 })
 

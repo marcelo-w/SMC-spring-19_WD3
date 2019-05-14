@@ -10,11 +10,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <title>Canvas 2 - Game</title>
+    <title>Ball Game</title>
 </head>
     <body>
 
-        <div class="container text-center mt-5">
+        <div class="container text-center">
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="my-3">Click the ball to score – and make the ball move faster.</h1>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col">
@@ -24,13 +30,17 @@
                 </div>
             </div>
 
-            <div class="row mt-3">
+            <div class="row mt-2">
                 <div class="col">
-                    <button type="button" class="btn btn-warning btn-lg">Change Ball Color</button>
+                    <button type="button" class="btn btn-warning mx-2" onclick="changeSmall()">Smaller Ball</button>
+                    <button type="button" class="btn btn-warning mx-2" onclick="changeColor()">Reset Ball Color</button>
+                    <button type="button" class="btn btn-warning mx-2" onclick="changeBig()">Bigger Ball</button>
                 </div>
             </div>
 
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
         <script src="canvas.js"></script>
 
