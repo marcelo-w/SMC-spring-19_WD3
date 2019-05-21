@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+.jumbotron {
+    background-color: #82A0AA;
+}
+
 .card {
     background-color: #82A0AA;
     border-radius: 0;
@@ -32,8 +36,46 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-.arrow-up {
-    transform: rotate(180deg); 
+/* title animation */
+
+.title-animation {
+    animation-name: motion-title-delay;
+    animation-duration: 2.5s;
+    animation-delay: .25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes motion-title-delay {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+/* arrow rotation */
+
+.arrow-rotate {
+    animation-name: arrow-up;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes arrow-up {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 /* Media Rule Breakpoints */
@@ -41,6 +83,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+
+    .jumbotron {
+        background: transparent;
+    }
 
     .display-4 {
         font-size: 48px;
@@ -50,12 +96,4 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 18px;
     }
 
-}
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    .arrow-up {
-        display: none; 
-    }
 }
