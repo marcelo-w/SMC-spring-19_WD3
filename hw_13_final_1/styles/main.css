@@ -1,0 +1,133 @@
+body {
+    background-color: #343a40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.color-white {
+    color: white;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* album css */
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* animation - logo */
+
+.logo-black-white {
+    animation-name: change-black-white;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes change-black-white {
+    0% {
+        transform: rotate(0deg);
+        fill: white;
+    }
+
+    20% {
+        transform: rotate(0deg);
+        fill: white;
+    }
+
+    25% {
+        fill: black;
+    }
+
+    30% {
+        transform: rotate(180deg)
+    }
+
+    70% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        fill: black;
+    }
+
+    80% {
+        transform: rotate(360deg);
+        fill: white;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        fill: white;
+    }
+}
+
+/* animation - arrow rotation */
+
+.arrow-rotate {
+    animation-name: arrow-up;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes arrow-up {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
