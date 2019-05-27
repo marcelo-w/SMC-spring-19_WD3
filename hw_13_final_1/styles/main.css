@@ -5,7 +5,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+}
+
+p, li, label, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-item.active {
+    background-color: gray;
 }
 
 .hat-store {
@@ -17,45 +24,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
 }
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-/* album css */
-
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
+.border-bottom-gradient {
+    border-image-source: linear-gradient(90deg, #f14336, white, #f14336);
+    border-image-slice: 1;
 }
 
 footer {
@@ -137,14 +108,77 @@ footer p {
     }
 }
 
-/* blog */
+/* BLOG PAGE */
 
 .blog-post {
     background-color: gray;
 }
 
-/* checkout */
+/* CHECKOUT PAGE */
 
 .nav-checkout {
     background-color:#343a40;
+}
+
+.container-checkout {
+    max-width: 960px;
+}
+
+.lh-condensed {
+    line-height: 1.25;
+}
+
+/* HOME PAGE */
+
+    /* album css */
+
+    .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    }
+
+    .jumbotron p:last-child {
+    margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+    font-weight: 300;
+    }
+
+    .jumbotron .container {
+    max-width: 40rem;
+    }
+
+/* Carousel & Black & White Hat Pages */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    /* Album CSS */
+    .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    }
+
+    /* Black & White Hat Pages */
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
+    /* Carousel */
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
 }
