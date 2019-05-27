@@ -8,8 +8,13 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.color-white {
-    color: white;
+.hat-store {
+    color:rgba(255,255,255,.5);
+    font-family: 'Oswald', sans-serif;
+}
+
+.brand-size {
+    font-size: 1.5rem;
 }
 
 .bd-placeholder-img {
@@ -64,11 +69,11 @@ footer p {
 
 /* animation - logo */
 
-.logo-black-white {
+.animate-logo {
     animation-name: change-black-white;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-delay: 0s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
 }
@@ -130,4 +135,16 @@ footer p {
     100% {
         transform: rotate(180deg);
     }
+}
+
+/* blog */
+
+.blog-post {
+    background-color: gray;
+}
+
+/* checkout */
+
+.nav-checkout {
+    background-color:#343a40;
 }
