@@ -110,8 +110,8 @@ footer p {
 
 /* BLOG PAGE */
 
-.blog-post {
-    background-color: gray;
+.blog-post, .check-out-color {
+    background-color: lightgray;
 }
 
 /* CHECKOUT PAGE */
@@ -161,15 +161,16 @@ footer p {
     user-select: none;
 }
 
+    /* Featurettes */
+
+    .featurette-div-custom {
+        border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
+        border-image-slice: 1;
+    }
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-
-    /* Album CSS */
-    .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    }
 
     /* Black & White Hat Pages */
     .bd-placeholder-img-lg {
@@ -181,4 +182,20 @@ footer p {
         font-size: 3.5rem;
     }
 
+}
+
+/* RESPONSIVE CSS - Featurettes
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
