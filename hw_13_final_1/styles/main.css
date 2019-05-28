@@ -7,6 +7,14 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 p, li, label, button {
     font-family: 'Roboto', sans-serif;
 }
@@ -24,8 +32,8 @@ p, li, label, button {
     font-size: 1.5rem;
 }
 
-.border-bottom-gradient {
-    border-image-source: linear-gradient(90deg, #f14336, white, #f14336);
+.border-custom {
+    border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
     border-image-slice: 1;
 }
 
@@ -87,25 +95,10 @@ footer p {
     }
 }
 
-/* animation - arrow rotation */
+/* arrow rotation */
 
 .arrow-rotate {
-    animation-name: arrow-up;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-}
-
-@keyframes arrow-up {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
+    transform: rotate(180deg);
 }
 
 /* BLOG PAGE */
@@ -161,13 +154,6 @@ footer p {
     user-select: none;
 }
 
-    /* Featurettes */
-
-    .featurette-div-custom {
-        border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
-        border-image-slice: 1;
-    }
-
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
@@ -186,13 +172,6 @@ footer p {
 
 /* RESPONSIVE CSS - Featurettes
 -------------------------------------------------- */
-
-@media (min-width: 40em) {
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
 
 @media (min-width: 62em) {
   .featurette-heading {
