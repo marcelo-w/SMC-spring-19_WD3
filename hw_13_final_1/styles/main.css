@@ -8,15 +8,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 48px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
 }
 
 p, li, label, button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-black {
+    color: black;
 }
 
 .dropdown-item.active {
@@ -28,9 +36,9 @@ p, li, label, button {
     font-family: 'Oswald', sans-serif;
 }
 
-.brand-size {
+/* .brand-size {
     font-size: 1.5rem;
-}
+} */
 
 .border-custom {
     border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
@@ -93,6 +101,16 @@ footer p {
         transform: rotate(360deg);
         fill: white;
     }
+}
+
+/* logo - black & white */
+
+.logo-black {
+    fill: black;
+}
+
+.logo-white {
+    fill: white;
 }
 
 /* arrow rotation */

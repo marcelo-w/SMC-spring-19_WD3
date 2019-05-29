@@ -1,17 +1,18 @@
 body {
     /* background-color: #999999; */
-    background-color: #ccc;
+    /* use check-ou color? #343a40 */
+    background-color: lightgray;
 }
 
 h1, h2, h3, h4, h5, h6, .featurette-heading {
     font-family: 'Oswald', sans-serif;
-    color: #333;
+    color: white;
 }
 
 p, a{
-    color: #666;
+    color: #212529;
 }
 .border-custom {
-    border-image-source: linear-gradient(90deg, #ccc, #343a40, #ccc);
+    border-image-source: linear-gradient(90deg, lightgray, #212529, lightgray);
     border-image-slice: 1;
 }
