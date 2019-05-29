@@ -1,0 +1,17 @@
+body {
+    /* background-color: #999999; */
+    background-color: #ccc;
+}
+
+h1, h2, h3, h4, h5, h6, .featurette-heading {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+}
+
+p, a{
+    color: #666;
+}
+.border-custom {
+    border-image-source: linear-gradient(90deg, #ccc, #343a40, #ccc);
+    border-image-slice: 1;
+}
