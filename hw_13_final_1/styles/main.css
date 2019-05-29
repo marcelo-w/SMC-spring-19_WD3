@@ -3,28 +3,33 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: white;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 54px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 44px;
 }
 
 h4 {
     font-size: 32px;
 }
 
+p, footer.p, .lead {
+  font-size: 20px;  
+}
+
 p, li, label, button {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .text-black {
     color: black;
+    text-shadow: 0px 0px 2px #FFFFFF;
 }
 
 .dropdown-item.active {
@@ -33,7 +38,8 @@ p, li, label, button {
 
 .hat-store {
     color:rgba(255,255,255,.5);
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
 }
 
 /* .brand-size {
