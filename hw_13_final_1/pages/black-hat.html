@@ -64,12 +64,22 @@
     <main role="main">
 
         <div class="jumbotron text-center bg-transparent mt-4 mt-sm-5">
-            <div class="container">
+
+            <div class="container mb-4">
                 <h1 class="jumbotron-heading text-black">Black Hat</h1>
                 <p class="lead text-white">Rarely seen without his stovepipe hat, President Abraham
                 Lincoln helped make the black top hat popular.</p>
             </div>
+
+            <picture>
+                <source srcset="../assets/images/hero/lincoln-large.jpg" media="(min-width: 1000px)" type="image/jpg">
+                <source srcset="../assets/images/hero/lincoln-medium.jpg" media="(min-width: 576px)" type="image/jpg">
+                <img src="../assets/images/hero/lincoln-small.jpg" alt="Default image" class="white-hero">
+            </picture>
+
         </div>
+
+        <!-- featurettes -->
 
         <div class="container">
 
@@ -133,6 +143,9 @@
             <hr class="featurette-divider border-custom">
 
         </div>
+
+        <!-- end featurettes -->
+
     </main>
 
     <!-- footer -->

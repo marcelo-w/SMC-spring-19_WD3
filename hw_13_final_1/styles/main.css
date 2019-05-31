@@ -169,6 +169,11 @@ footer p {
 
 /* Carousel & Black & White Hat Pages */
 
+/* .carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+} */
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -176,6 +181,14 @@ footer p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.black-hero {
+    border: 1px solid #999999;
+}
+
+.white-hero {
+    border: 1px solid #999999;
 }
 
 /* MEDIA QUERIES */
