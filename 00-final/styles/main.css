@@ -1,0 +1,283 @@
+body {
+    background-color: #343a40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+p, footer.p, .lead {
+  font-size: 20px;  
+}
+
+p, li, label, .btn {
+    font-family: 'Roboto Slab', serif;
+}
+
+.text-black {
+    color: black;
+    text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.text-only-black {
+    color: black;
+}
+
+.text-only-white {
+    color: white;
+}
+.dropdown-item.active {
+    background-color: gray;
+}
+
+.hat-store {
+    color:rgba(255,255,255,.5);
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+}
+
+/* .brand-size {
+    font-size: 1.5rem;
+} */
+
+.border-custom {
+    border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
+    border-image-slice: 1;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* animation - logo */
+
+.animate-logo {
+    animation-name: change-black-white;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes change-black-white {
+    0% {
+        transform: rotate(0deg);
+        fill: white;
+    }
+
+    20% {
+        transform: rotate(0deg);
+        fill: white;
+    }
+
+    25% {
+        fill: black;
+    }
+
+    30% {
+        transform: rotate(180deg)
+    }
+
+    70% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        fill: black;
+    }
+
+    80% {
+        transform: rotate(360deg);
+        fill: white;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        fill: white;
+    }
+}
+
+/* logo - black & white */
+
+.logo-black {
+    fill: black;
+}
+
+.logo-white {
+    fill: white;
+}
+
+/* animation - quote */
+
+.quote-animate {
+    animation-name: quote-fade;
+    animation-duration: 5s;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes quote-fade {
+    0% {
+        opacity: 0.0;
+    }
+
+    30% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+/* arrow rotate up */
+
+.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+/* animate arrow */
+
+/* .arrow-rotate {
+    animation-name: arrow-up;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes arrow-up {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+} */
+
+/* BLOG PAGE */
+
+.blog-post, .check-out-color {
+    background-color: lightgray;
+}
+
+/* CHECKOUT PAGE */
+
+.nav-checkout {
+    background-color:#343a40;
+}
+
+.container-checkout {
+    max-width: 960px;
+}
+
+.lh-condensed {
+    line-height: 1.25;
+}
+
+/* HOME PAGE */
+
+    /* album css */
+
+    .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    }
+
+    .jumbotron p:last-child {
+    margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+    font-weight: 300;
+    }
+
+    .jumbotron .container {
+    max-width: 40rem;
+    }
+
+/* Black & White Hat Pages */
+
+/* .black-hero {
+    border: 1px solid #999999;
+}
+
+.white-hero {
+    border: 1px solid #999999;
+} */
+
+/* Media Rule Breakpoints */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p, label, footer.p, .lead, .foot {
+    font-size: 18px;  
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+}
