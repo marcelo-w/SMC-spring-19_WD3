@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto+Slab&display=swap" rel="stylesheet">
 
-    <title>H4T ST0R3 - FAQ</title>
+    <title>H4T ST0R3 - Contact</title>
 </head>
 
 <body>
@@ -50,11 +50,11 @@
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">FAQ<span class="sr-only">(current)</a>
+                        <a class="nav-link" href="#">Contact<span class="sr-only">(current)</a>
                     </li>
                 </ul>
 
-                <a href="check-out.html"><img class="d-flex float-right" src="../assets/images/cart.svg"
+                <a href="check-out.html"><img class="d-flex float-lg-right float-left" src="../assets/images/cart.svg"
                         alt="Shopping Cart" width="34" height="32"></a>
             </div>
         </nav>
@@ -64,15 +64,55 @@
 
         <div class="jumbotron text-center bg-transparent mt-4 mt-sm-5">
             <div class="container">
-                <h1 class="jumbotron-heading">FAQ</h1>
+                <h1 class="jumbotron-heading">Contact</h1>
             </div>
+
+            <div class="mx-auto col-lg-6 col-sm-10 text-sm-left pt-4 text-center">
+
+                <form class="needs-validation" novalidate>
+                    <div class="form-group mb-3">
+                        <label class="text-white" for="validationCustom01">Name</label>
+                        <input type="text" class="form-control add-corners" id="validationCustom01" placeholder="Your name"
+                            required>
+                            <div class="invalid-feedback">
+                                Required
+                            </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="text-white" for="validationCustomUsername">Email address</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control add-corners" id="validationCustomUsername" placeholder="Username"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="text-white" for="validationTextarea">Your comment</label>
+                        <textarea class="form-control add-corners" id="inputMessage" placeholder="What's on your mind?"
+                            required></textarea>
+                            <div class="invalid-feedback">
+                                Required
+                            </div>
+                    </div>
+                    <button class="btn btn-secondary add-corners" type="submit">Send</button>
+                </form>
+
+            </div>
+
         </div>
 
     </main>
 
+    <hr class="featurette-divider border-custom">
+
     <!-- footer -->
     
-    <footer class="container bg-transparent border-top border-custom mt-5 py-1 mb-4">
+    <footer class="container bg-transparent py-1 mb-4">
         <div class="row mt-4">
             <div class="col-sm-8 col-md-7">
                 <h4>About</h4>
@@ -80,11 +120,10 @@
                     nod to hacker subculture that is associated with the terms black hat and white hat.</p>
             </div>
             <div class="col-sm-4 offset-md-1 mt-3 mt-md-0">
-                <h4 class="text-white">Contact</h4>
+                <h4 class="text-white">#HatStore</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="foot text-white">Follow on Twitter</a></li>
-                    <li><a href="#" class="foot text-white">Like on Facebook</a></li>
-                    <li><a href="#" class="foot text-white">Email us</a></li>
+                    <li><a href="#" class="foot text-white">Twitter</a></li>
+                    <li><a href="#" class="foot text-white">Facebook</a></li>
                 </ul>
                 <a href="#"><img class="arrow-rotate float-right" src="../assets/images/arrow.svg" alt="" width="32"
                         height="32"></a>
@@ -103,6 +142,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </body>
 
 </html>
