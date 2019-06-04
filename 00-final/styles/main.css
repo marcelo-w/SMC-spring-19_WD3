@@ -206,10 +206,18 @@ footer p {
     }
 }
 
-/* arrow rotate up */
+/* arrow rotate */
+
+/* back to top */
 
 .arrow-rotate {
     transform: rotate(180deg);
+}
+
+/* back to previous */
+
+.arrow-back {
+    transform: rotate(90deg);
 }
 
 /* BLOG PAGE */
@@ -253,7 +261,15 @@ footer p {
 /* Black & White Hat Pages */
 
 .hover-grow:hover {
-    transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);   
+}
+
+.learn-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    position: relative;
+    opacity: 0.6;
+    top: -15px;
 }
 
 /* Product */
@@ -325,6 +341,10 @@ footer p {
 
     h4 {
         font-size: 22px;
+    }
+
+    .price {
+        font-size: 32px;
     }
 
     .button-block {

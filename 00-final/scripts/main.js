@@ -1,4 +1,4 @@
-// add to cart & spin on window scroll
+// add to cart - change number
 
 function updateCart() {
     var value = parseInt(document.getElementById('cart').value, 10);
@@ -6,6 +6,8 @@ function updateCart() {
     value++;
     document.getElementById('cart').value = value;
 }
+
+// spin on window scroll down - black & white pages only
 
 
 $(function () {
