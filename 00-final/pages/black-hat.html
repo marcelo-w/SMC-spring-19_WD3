@@ -39,24 +39,31 @@
                         <a class="nav-link" href="../index.html">Home</span></a>
                     </li> -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        <a class="nav-link dropdown-toggle mb-2 mb-md-0" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">Hats</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item active" href="#">Black Hat<span class="sr-only">(current)</a>
-                            <a class="dropdown-item" href="white-hat.html">White Hat</a>
-                            <a class="dropdown-item" href="hat-hacks.html">Hat Hacks</a>
+                            <a class="dropdown-item  mb-2 mb-lg-0 active" href="#">Black Hat<span class="sr-only">(current)</a>
+                            <a class="dropdown-item mb-2 mb-lg-0" href="white-hat.html">White Hat</a>
+                            <a class="dropdown-item mb-2 mb-lg-0" href="hat-hacks.html">Hat Hacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link mb-2 mb-md-0" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link mb-3 mb-md-0" href="contact.html">Contact</a>
                     </li>
                 </ul>
 
-                <a href="check-out.html"><span class="badge text-white badge-position">0</span><img class="d-flex float-lg-right float-left" src="../assets/images/cart.svg" alt="Shopping Cart" width="34"
-                        height="32"></a>
+    <!-- Shopping Cart Badge -->
+
+                <form>
+                    <input class="cart-form mb-2 mb-md-0 d-flex float-lg-right float-left" type="text" size="1" id="cart" value="0" readonly/>
+                </form>
+
+                <a href="check-out.html"><img class="cart-svg mb-2 mb-md-0 d-flex float-lg-right float-left" src="../assets/images/cart.svg" alt="Shopping Cart"
+                        width="34" height="32"></a>
+
             </div>
         </nav>
     </header>
@@ -82,7 +89,7 @@
 
         </div>
 
-        <!-- featurettes -->
+    <!-- hat featurettes -->
 
         <div class="container">
 
@@ -93,7 +100,7 @@
                     <h2 class="featurette-heading text-black">Balaclava</h2>
                     <p class="lead text-white">Balaclavas are used in outdoor winter sports to protect the face
                     from wind and maintain warmth. They are also popular among motorcyclists and bicyclists.</p>
-                    <button class="btn btn-secondary add-corners button-block mt-lg-5" type="submit">Add to Cart</button>
+                    <button class="btn btn-secondary add-corners button-block mt-lg-5" onclick="updateCart()">Add to Cart</button>
                 </div>
                 <div class="col-md-5">
                     <img src="../assets/images/product/01-b-balaclava.jpg" alt="" class="img-fluid">
@@ -107,7 +114,7 @@
                     <h2 class="featurette-heading text-black">Leather Cap</h2>
                     <p class="lead text-white">The black leather flat cap is often combined with a leather jacket and dark clothes in popular culture to depict a burglar, mugger, or robber, occasionally
                     with a domino mask.</p>
-                    <button class="btn btn-secondary add-corners button-block mt-lg-5 float-right" type="submit">Add to Cart</button>
+                    <button class="btn btn-secondary add-corners button-block mt-lg-5 float-right" onclick="updateCart()">Add to Cart</button>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img src="../assets/images/product/02-b-leather-cap.jpg" alt="" class="img-fluid">
@@ -120,7 +127,7 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading text-black">Fedora</h2>
                     <p class="lead text-white"> The women's rights movement adopted the fedora as a fashionable symbol. Popular among men for its stylishness and its ability to protect the wearer's head from the weather.</p>
-                    <button class="btn btn-secondary add-corners button-block mt-lg-5" type="submit">Add to Cart</button>
+                    <button class="btn btn-secondary add-corners button-block mt-lg-5" onclick="updateCart()">Add to Cart</button>
                 </div>
                 <div class="col-md-5">
                     <img src="../assets/images/product/03-b-fedora.jpg" alt="" class="img-fluid">
@@ -134,7 +141,7 @@
                     <h2 class="featurette-heading text-black">Cowboy Hat</h2>
                     <p class="lead text-white">Few white cowboy hats are worn in American Westerns, either by heroes or villains. Imagine how dirty a white hat becomes in a dusty
                     environment.</p>
-                    <button class="btn btn-secondary add-corners button-block mt-lg-5 float-right" type="submit">Add to Cart</button>
+                    <button class="btn btn-secondary add-corners button-block mt-lg-5 float-right" onclick="updateCart()">Add to Cart</button>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img src="../assets/images/product/04-b-cowboy-hat.jpg" alt="" class="img-fluid">
@@ -181,6 +188,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script src="../scripts/main.js"></script>
+
 </body>
 
 </html>

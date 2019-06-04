@@ -57,17 +57,54 @@ p, li, label, .btn {
     letter-spacing: 2px;
 }
 
-/* buttons */
+/* cart icon*/
 
-.badge-position {
+.cart-form {
+    z-index: 2;
+    position: relative;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+
+.cart-svg {
+    position: relative;
+    left: -21px;
+    top: 1px;
+    z-index: 1;
+}
+
+/* .badge-position {
     position: relative;
     left: 28px;
     top: 2px;
+} */
+
+/* logo - black & white */
+
+.logo-black {
+    fill: black;
 }
+
+.logo-white {
+    fill: white;
+}
+
+/* landing page buttons */
 
 .btn-home {
     vertical-align: top;
 }
+
+.hover-black:hover {
+    color: black;
+}
+
+/* Line break gradient */
 
 .border-custom {
     border-image-source: linear-gradient(90deg, #343a40, #6c757d, #343a40);
@@ -132,16 +169,6 @@ footer p {
     }
 }
 
-/* logo - black & white */
-
-.logo-black {
-    fill: black;
-}
-
-.logo-white {
-    fill: white;
-}
-
 /* animation - quote */
 
 .quote-animate {
@@ -172,27 +199,6 @@ footer p {
 .arrow-rotate {
     transform: rotate(180deg);
 }
-
-/* animate arrow */
-
-/* .arrow-rotate {
-    animation-name: arrow-up;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-}
-
-@keyframes arrow-up {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
-} */
 
 /* BLOG PAGE */
 
