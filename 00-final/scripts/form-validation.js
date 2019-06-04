@@ -1,3 +1,5 @@
+// bootstrap form validation - contact & checkout pages
+
 (function () {
     'use strict'
 

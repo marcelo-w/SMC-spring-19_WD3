@@ -78,11 +78,13 @@ p, li, label, .btn {
     z-index: 1;
 }
 
-/* .badge-position {
-    position: relative;
-    left: 28px;
-    top: 2px;
-} */
+#checkout-badge {
+    font-size: 32px;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url("../assets/images/cart.svg");
+    background-repeat: no-repeat;
+}
 
 /* logo - black & white */
 
@@ -120,52 +122,62 @@ footer p {
   margin-bottom: .25rem;
 }
 
-/* animation - logo */
+/* animation - logo swap color */
 
 .animate-logo {
     animation-name: change-black-white;
     animation-duration: 20s;
-    animation-delay: 0s;
+    animation-delay: .2s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes change-black-white {
+
     0% {
-        transform: rotate(0deg);
         fill: white;
     }
 
     20% {
-        transform: rotate(0deg);
         fill: white;
     }
 
-    25% {
+    40% {
         fill: black;
     }
 
-    30% {
-        transform: rotate(180deg)
-    }
-
-    70% {
-        transform: rotate(180deg)
-    }
-
-    75% {
+    60% {
         fill: black;
     }
 
     80% {
-        transform: rotate(360deg);
         fill: white;
     }
 
     100% {
-        transform: rotate(360deg);
         fill: white;
+    }
+}
+
+/* animation - logo spin */
+
+.logo-spin {
+    animation-name: spin-hat;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes spin-hat {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -240,13 +252,28 @@ footer p {
 
 /* Black & White Hat Pages */
 
-/* .black-hero {
-    border: 1px solid #999999;
+.hover-grow:hover {
+    transform:scale(1.1,1.1);
 }
 
-.white-hero {
-    border: 1px solid #999999;
+/* Product */
+
+.price {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+/* Blog */
+
+/* .buy-this {
+    font-family: 'Roboto Slab', serif;
 } */
+
+.blog-post-meta {
+    margin-bottom: 4px; 
+}
+
+
 
 /* Media Rule Breakpoints */
 

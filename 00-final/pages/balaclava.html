@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>H4T ST0R3 - Balaclava</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark border-bottom border-custom">
+
+            <a href="../index.html" class="navbar-brand d-flex align-items-center brand-size">
+                <svg id="hatlogo" xmlns="http://www.w3.org/2000/svg" width="50" height="25" aria-hidden="true"
+                    class="logo-black mr-2" viewBox="0 0 20 10" focusable="false">
+                    <path
+                        d="M1.1 10H18.9a1.2 1.2 0 0 0 0-2.3H16.1V2.4A2.5 2.5 0 0 0 13.8 0H6.3A2.5 2.5 0 0 0 4 2.4H4V7.8H1.1A1.1 1.1 0 0 0 0 9 1.1 1.1 0 0 0 1.1 10Z" />
+                </svg>
+                <strong class="hat-store">H4T ST0R3</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</span></a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mb-2 mb-md-0" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Hats</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item  mb-2 mb-lg-0" href="black-hat.html">Black Hat</a>
+                            <a class="dropdown-item mb-2 mb-lg-0" href="white-hat.html">White Hat</a>
+                            <a class="dropdown-item mb-2 mb-lg-0" href="hat-hacks.html">Hat Hacks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-2 mb-md-0" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-3 mb-md-0" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Shopping Cart Badge -->
+
+                <form>
+                    <input class="cart-form mb-2 mb-md-0 d-flex float-lg-right float-left" type="text" size="1"
+                        id="cart" value="0" readonly />
+                </form>
+
+                <a href="check-out.html"><img class="cart-svg mb-2 mb-md-0 d-flex float-lg-right float-left"
+                        src="../assets/images/cart.svg" alt="Shopping Cart" width="34" height="32"></a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+    
+        <div class="jumbotron text-center bg-transparent mt-4 mt-sm-5 mb-n2">
+    
+            <div class="container mb-1">
+                <h1 class="jumbotron-heading text-black">Balaclava</h1>
+            </div>
+    
+        </div>
+    
+        <!-- product -->
+    
+        <div class="container">
+    
+            <div class="row featurette py-xs-2 pb-4">
+                <div class="col-md-7">
+                    <p class="lead text-white">* 100% Polyester * Provides Comfort & Protection To The Head & Neck * One Size Fits
+                    Most * Built Durably To Last Through Rugged Use *</p>
+                    <p class="text-white">Balaclava Fact: <em>The name comes from their use at the Battle of Balaclava during the Crimean War.</em></p>
+
+                    <p class="price text-black">$35</p>
+
+                    <button class="btn btn-secondary add-corners button-block mt-lg-5" onclick="updateCart()">Add to
+                        Cart</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="../assets/images/product/01-b-balaclava.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+    
+            <hr class="featurette-divider border-custom">
+    
+        </div>
+    
+        <!-- end product -->
+        
+    </main>
+        
+        <!-- footer -->
+        
+    <footer class="container bg-transparent py-1 mb-4">
+        <div class="row">
+            <div class="col-sm-8 col-md-7">
+                <h4 class="text-black">About</h4>
+                <p class="text-white">The H4T ST0R3 team are purveyors of black and white headwear. Our name appears in leet
+                    speak, as a
+                    nod to hacker subculture that is associated with the terms black hat and white hat.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 mt-3 mt-md-0">
+                <h4 class="text-black">#HatStore</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="foot text-white">Twitter</a></li>
+                    <li><a href="#" class="foot text-white">Facebook</a></li>
+                </ul>
+                <a href="#"><img class="arrow-rotate float-right" src="../assets/images/arrow.svg" alt="" width="32"
+                        height="32"></a>
+            </div>
+        </div>
+    </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        
+        <script src="../scripts/main.js"></script>
+        
+    </body>
+        
+</html>
